@@ -5,38 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InnerSpace – Privacy Policy</title>
   <style>
-    body { font-family: -apple-system, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
-    h1 { color: #111; } h2 { margin-top: 32px; color: #222; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 720px;
+      margin: 48px auto;
+      padding: 0 24px 64px;
+      color: #222;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+    h1 { font-size: 28px; color: #111; margin-bottom: 4px; }
+    h2 { font-size: 18px; color: #111; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    p, li { color: #444; }
+    a { color: #5b6af0; }
+    .meta { color: #888; font-size: 14px; margin-bottom: 40px; }
   </style>
 </head>
 <body>
+
   <h1>Privacy Policy</h1>
-  <p><strong>InnerSpace: Sleep &amp; Sound</strong><br>Last updated: May 27, 2026</p>
+  <p class="meta">InnerSpace: Sleep &amp; Sound &nbsp;·&nbsp; Last updated: May 27, 2026</p>
 
-  <h2>Information We Collect</h2>
-  <p>InnerSpace does not collect personally identifiable information. The app stores the following data locally on your device only: session history, mood check-ins, streaks, and app preferences.</p>
+  <p>InnerSpace ("we", "our", or "us") is committed to protecting your privacy. This policy explains what information is collected, how it is used, and your rights as a user of the InnerSpace app.</p>
 
-  <h2>Purchases &amp; Subscriptions</h2>
-  <p>InnerSpace offers auto-renewable subscriptions processed through Apple In-App Purchases. Purchase and billing information is handled entirely by Apple and RevenueCat. We do not store your payment details.</p>
-
-  <h2>Third-Party Services</h2>
-  <p>The app uses the following third-party services:</p>
+  <h2>1. Information We Collect</h2>
+  <p>InnerSpace does not require you to create an account. We collect minimal data to provide a personalised experience.</p>
+  <p><strong>Stored locally on your device only:</strong></p>
   <ul>
-    <li><strong>RevenueCat</strong> – subscription management (stores an anonymous user ID)</li>
-    <li><strong>Supabase</strong> – audio content delivery (CDN only, no personal data)</li>
-    <li><strong>Expo / EAS</strong> – app delivery and crash reporting</li>
+    <li>Mood check-ins and emotional history</li>
+    <li>Daily streaks and usage stats</li>
+    <li>Sound Temple mix preferences</li>
+    <li>Onboarding and app preferences</li>
+    <li>AI journal session count (to manage usage limits)</li>
   </ul>
+  <p>This data never leaves your device and is not transmitted to our servers.</p>
+  <p>InnerSpace does not access, collect, or store your location data at any time.</p>
 
-  <h2>Audio Content</h2>
-  <p>All audio content is streamed from our secure CDN. No audio is recorded from your device.</p>
+  <h2>2. AI Journal Feature</h2>
+  <p>InnerSpace includes an AI-powered journal that generates reflective responses to your thoughts. When you use this feature:</p>
+  <ul>
+    <li>Your messages are sent to <strong>Anthropic</strong> (makers of Claude AI) via a secure Supabase Edge Function</li>
+    <li>Messages are processed in real time to generate a response and are not stored on our servers beyond the active session</li>
+    <li>Anthropic may process this data in accordance with their own privacy policy</li>
+  </ul>
+  <p>See <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a> for details on how they handle data.</p>
+  <p>We recommend you do not include sensitive personal information such as financial details, passwords, or identifying information about others in your journal entries.</p>
 
-  <h2>Children's Privacy</h2>
-  <p>InnerSpace is not directed at children under 13. We do not knowingly collect data from children.</p>
+  <h2>3. Subscriptions &amp; Purchases</h2>
+  <p>InnerSpace offers auto-renewable subscriptions processed through Apple In-App Purchases:</p>
+  <ul>
+    <li><strong>Monthly:</strong> $9.99 per month</li>
+    <li><strong>Annual:</strong> $59.99 per year</li>
+  </ul>
+  <p>Payment is charged to your Apple ID at confirmation of purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID Account Settings.</p>
+  <p>Subscription management and receipt validation is handled by <strong>RevenueCat</strong>, which stores an anonymous user identifier and purchase history to track entitlements. We do not store your payment details.</p>
 
-  <h2>Changes to This Policy</h2>
-  <p>We may update this policy from time to time. Continued use of the app constitutes acceptance of any changes.</p>
+  <h2>4. Audio Content</h2>
+  <p>All audio content (sessions, affirmations, Sound Temple layers) is streamed from our secure CDN hosted on Supabase. No audio is recorded from your device at any time. Your IP address may be processed by Supabase's CDN infrastructure solely for the purpose of delivering content — it is not stored or used for any other purpose.</p>
 
-  <h2>Contact</h2>
-  <p>Questions? Email us at Groovymoves01@gmail.com</p>
+  <h2>5. Third-Party Services</h2>
+  <p>The app integrates the following third-party services:</p>
+  <ul>
+    <li><strong>RevenueCat</strong> – subscription and entitlement management. Collects anonymous user ID, device type, app version, and purchase history. <a href="https://www.revenuecat.com/privacy">Privacy Policy</a></li>
+    <li><strong>Supabase</strong> – audio CDN and secure backend functions. Processes IP addresses for content delivery only. <a href="https://supabase.com/privacy">Privacy Policy</a></li>
+    <li><strong>Anthropic (Claude AI)</strong> – AI journal responses. Journal messages are processed in real time and not retained. <a href="https://www.anthropic.com/privacy">Privacy Policy</a></li>
+    <li><strong>Expo / EAS</strong> – app delivery, over-the-air updates, and crash reporting. May collect device information and crash logs. <a href="https://expo.dev/privacy">Privacy Policy</a></li>
+    <li><strong>Apple</strong> – In-App Purchases, push notifications, and App Store distribution. <a href="https://www.apple.com/privacy">Privacy Policy</a></li>
+  </ul>
+  <p>Some of these services are based in the United States. By using InnerSpace, you consent to your data being processed in countries outside your own where data protection laws may differ.</p>
+
+  <h2>6. Push Notifications</h2>
+  <p>InnerSpace may send optional push notifications (e.g. daily reminders, streak nudges). You can enable or disable these at any time in your device Settings. We do not use notification data for advertising purposes.</p>
+
+  <h2>7. Data Retention</h2>
+  <p>All locally stored data (mood history, streaks, preferences) remains on your device until you delete the app or clear app data. We do not retain your personal data on our servers.</p>
+
+  <h2>8. Security</h2>
+  <p>All data transmitted between the app and our backend services is encrypted using HTTPS/TLS. Locally stored data is protected by your device's built-in security. While no system is 100% secure, we take reasonable steps to protect your information from unauthorised access or disclosure.</p>
+
+  <h2>9. Children's Privacy</h2>
+  <p>InnerSpace is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us and we will take steps to remove it.</p>
+
+  <h2>10. Your Rights</h2>
+  <p>Since InnerSpace does not collect or store personal data on our servers, there is no account data to access, correct, or delete. To remove all locally stored data, simply delete the app from your device.</p>
+  <p>If you have used the AI journal feature and have concerns about data processed by Anthropic, please refer to <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a> or contact them directly.</p>
+  <p>If you are located in the European Economic Area (EEA), you may have additional rights under GDPR including the right to access, rectify, or erase your data. Please contact us to exercise these rights.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify users of significant changes via an in-app notice or App Store update notes. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>12. Terms of Use</h2>
+  <p>Use of InnerSpace is also governed by our Terms of Use. By using the app you agree to both this Privacy Policy and our <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>.</p>
+
+  <h2>13. Contact Us</h2>
+  <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+  <p>
+    <strong>Email:</strong> <a href="mailto:mmxvii223@gmail.com">groovymoves01@gmail.com</a><br>
+    <strong>App:</strong> InnerSpace: Sleep &amp; Sound<br>
+    <strong>Developer:</strong> InnerSpace Studio
+  </p>
+
+  <hr style="margin-top: 48px; border: none; border-top: 1px solid #eee;">
+  <p style="font-size: 13px; color: #aaa;">© 2026 InnerSpace Studio. All rights reserved.</p>
+
 </body>
 </html>
