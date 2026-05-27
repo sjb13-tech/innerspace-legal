@@ -33,52 +33,56 @@
   <p><strong>Stored locally on your device only:</strong></p>
   <ul>
     <li>Mood check-ins and emotional history</li>
-    <li>Daily streaks and usage stats</li>
-    <li>Sound Temple mix preferences</li>
-    <li>Onboarding and app preferences</li>
-    <li>AI journal session count (to manage usage limits)</li>
+    <li>Daily streaks and usage statistics</li>
+    <li>Sound Temple mix preferences and saved mixes</li>
+    <li>Onboarding choices and app preferences</li>
+    <li>AI Journey session count (to manage usage limits)</li>
+    <li>Saved AI Journeys (title, description, and session metadata)</li>
   </ul>
   <p>This data never leaves your device and is not transmitted to our servers.</p>
   <p>InnerSpace does not access, collect, or store your location data at any time.</p>
 
-  <h2>2. AI Journal Feature</h2>
-  <p>InnerSpace includes an AI-powered journal that generates reflective responses to your thoughts. When you use this feature:</p>
+  <h2>2. AI Journey Creator</h2>
+  <p>InnerSpace includes an AI Journey Creator (available to premium subscribers) that generates a personalised guided meditation experience based on how you are feeling. When you use this feature:</p>
   <ul>
-    <li>Your messages are sent to <strong>Anthropic</strong> (makers of Claude AI) via a secure Supabase Edge Function</li>
-    <li>Messages are processed in real time to generate a response and are not stored on our servers beyond the active session</li>
-    <li>Anthropic may process this data in accordance with their own privacy policy</li>
+    <li>Your input text is sent to <strong>Anthropic</strong> (makers of Claude AI) via a secure server-side function to generate a personalised narration script and session plan. This text is processed in real time and is not stored on our servers.</li>
+    <li>The generated narration script is sent to <strong>ElevenLabs</strong> to produce a voice narration audio file. An ambient sound description is also sent to ElevenLabs to generate background audio.</li>
+    <li>The resulting audio files are uploaded to our <strong>Supabase</strong> storage and linked to your device for playback. These files are stored on our servers and may be retained for a limited period.</li>
   </ul>
-  <p>See <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a> for details on how they handle data.</p>
-  <p>We recommend you do not include sensitive personal information such as financial details, passwords, or identifying information about others in your journal entries.</p>
+  <p>We recommend you do not include sensitive personal information such as financial details, passwords, or identifying information about others in your input.</p>
+  <p>See the third-party services section below for links to each provider's privacy policy.</p>
 
   <h2>3. Subscriptions &amp; Purchases</h2>
-  <p>InnerSpace offers auto-renewable subscriptions processed through Apple In-App Purchases:</p>
+  <p>InnerSpace offers auto-renewable subscriptions processed through Apple In-App Purchases and Google Play Billing:</p>
   <ul>
     <li><strong>Monthly:</strong> $9.99 per month</li>
     <li><strong>Annual:</strong> $59.99 per year</li>
+    <li><strong>Lifetime:</strong> $149.99 one-time purchase</li>
   </ul>
-  <p>Payment is charged to your Apple ID at confirmation of purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID Account Settings.</p>
+  <p>Payment is charged to your Apple ID or Google Play account at confirmation of purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID Account Settings or Google Play account.</p>
   <p>Subscription management and receipt validation is handled by <strong>RevenueCat</strong>, which stores an anonymous user identifier and purchase history to track entitlements. We do not store your payment details.</p>
 
   <h2>4. Audio Content</h2>
-  <p>All audio content (sessions, affirmations, Sound Temple layers) is streamed from our secure CDN hosted on Supabase. No audio is recorded from your device at any time. Your IP address may be processed by Supabase's CDN infrastructure solely for the purpose of delivering content — it is not stored or used for any other purpose.</p>
+  <p>All pre-recorded audio content (sessions, affirmations, Sound Temple layers) is streamed from our secure CDN hosted on Supabase. AI Journey Creator audio (narration and ambient sound) is generated on demand and stored in the same CDN. No audio is ever recorded from your device's microphone. Your IP address may be processed by Supabase's infrastructure solely for the purpose of delivering content.</p>
 
   <h2>5. Third-Party Services</h2>
   <p>The app integrates the following third-party services:</p>
   <ul>
     <li><strong>RevenueCat</strong> – subscription and entitlement management. Collects anonymous user ID, device type, app version, and purchase history. <a href="https://www.revenuecat.com/privacy">Privacy Policy</a></li>
-    <li><strong>Supabase</strong> – audio CDN and secure backend functions. Processes IP addresses for content delivery only. <a href="https://supabase.com/privacy">Privacy Policy</a></li>
-    <li><strong>Anthropic (Claude AI)</strong> – AI journal responses. Journal messages are processed in real time and not retained. <a href="https://www.anthropic.com/privacy">Privacy Policy</a></li>
+    <li><strong>Supabase</strong> – audio CDN, file storage, and secure backend functions. Processes IP addresses for content delivery. Generated AI Journey audio files are stored here. <a href="https://supabase.com/privacy">Privacy Policy</a></li>
+    <li><strong>Anthropic (Claude AI)</strong> – generates personalised narration scripts and session plans for the AI Journey Creator. Input text is processed in real time and not retained by us. <a href="https://www.anthropic.com/privacy">Privacy Policy</a></li>
+    <li><strong>ElevenLabs</strong> – converts narration scripts to voice audio and generates ambient soundscapes for the AI Journey Creator. Text prompts are sent to ElevenLabs' servers for audio synthesis. <a href="https://elevenlabs.io/privacy">Privacy Policy</a></li>
     <li><strong>Expo / EAS</strong> – app delivery, over-the-air updates, and crash reporting. May collect device information and crash logs. <a href="https://expo.dev/privacy">Privacy Policy</a></li>
     <li><strong>Apple</strong> – In-App Purchases, push notifications, and App Store distribution. <a href="https://www.apple.com/privacy">Privacy Policy</a></li>
+    <li><strong>Google</strong> – In-App Purchases and Google Play distribution (Android only). <a href="https://policies.google.com/privacy">Privacy Policy</a></li>
   </ul>
   <p>Some of these services are based in the United States. By using InnerSpace, you consent to your data being processed in countries outside your own where data protection laws may differ.</p>
 
   <h2>6. Push Notifications</h2>
-  <p>InnerSpace may send optional push notifications (e.g. daily reminders, streak nudges). You can enable or disable these at any time in your device Settings. We do not use notification data for advertising purposes.</p>
+  <p>InnerSpace may send optional push notifications such as daily reminders and streak nudges. You can enable or disable these at any time in your device Settings. We do not use notification data for advertising purposes.</p>
 
   <h2>7. Data Retention</h2>
-  <p>All locally stored data (mood history, streaks, preferences) remains on your device until you delete the app or clear app data. We do not retain your personal data on our servers.</p>
+  <p>All locally stored data (mood history, streaks, preferences) remains on your device until you delete the app or clear app data. AI Journey audio files stored on our servers may be retained for a limited period before automatic deletion. We do not retain your personal data on our servers beyond what is necessary to deliver the service.</p>
 
   <h2>8. Security</h2>
   <p>All data transmitted between the app and our backend services is encrypted using HTTPS/TLS. Locally stored data is protected by your device's built-in security. While no system is 100% secure, we take reasonable steps to protect your information from unauthorised access or disclosure.</p>
@@ -87,8 +91,8 @@
   <p>InnerSpace is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us and we will take steps to remove it.</p>
 
   <h2>10. Your Rights</h2>
-  <p>Since InnerSpace does not collect or store personal data on our servers, there is no account data to access, correct, or delete. To remove all locally stored data, simply delete the app from your device.</p>
-  <p>If you have used the AI journal feature and have concerns about data processed by Anthropic, please refer to <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a> or contact them directly.</p>
+  <p>Since InnerSpace does not collect or store personal data on our servers (outside of AI-generated audio files), there is no account data to access, correct, or delete. To remove all locally stored data, simply delete the app from your device.</p>
+  <p>If you have concerns about data processed by Anthropic or ElevenLabs, please refer to their respective privacy policies or contact them directly.</p>
   <p>If you are located in the European Economic Area (EEA), you may have additional rights under GDPR including the right to access, rectify, or erase your data. Please contact us to exercise these rights.</p>
 
   <h2>11. Changes to This Policy</h2>
@@ -100,7 +104,7 @@
   <h2>13. Contact Us</h2>
   <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
   <p>
-    <strong>Email:</strong> <a href="mailto:mmxvii223@gmail.com">groovymoves01@gmail.com</a><br>
+    <strong>Email:</strong> <a href="mailto:groovymoves01@gmail.com">groovymoves01@gmail.com</a><br>
     <strong>App:</strong> InnerSpace: Sleep &amp; Sound<br>
     <strong>Developer:</strong> InnerSpace Studio
   </p>
